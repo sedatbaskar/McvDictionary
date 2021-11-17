@@ -1,0 +1,64 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Category>
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<h3>Mvc Kamp Tablo Örneği</h3>
+<br />
+@foreach (var item in Model)
+{
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>Kategori Id</th>
+        <th>Kategori Adı</th>
+        <th>Açıklama</th>
+        <th>Durum</th>
+        <th>Güncelle</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Eğitim</td>
+        <td>Açıklama0</td>
+        <td>True</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Spor</td>
+        <td>Açıklama Oldu</td>
+        <td>True</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
+
+
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Kitap</td>
+        <td>Açıklama Oldu</td>
+        <td>True</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
+
+
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Sinema</td>
+        <td>Bekle</td>
+        <td>True</td>
+
+        <td><button class="btn btn-success">Güncelle</button></td>
+
+
+    </tr>
+</table>
+
+}
+<button class="btn btn-danger">Yeni Kategori</button>
+<button class="btn btn-success">Kategori Listesi</button>
+<button class="btn btn-info">Kategori Açıklamaları</button>
